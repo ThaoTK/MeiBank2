@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.meibank2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MeiBank2">
+        <activity android:name=".AddInvestmentActivity"></activity>
+        <activity android:name=".ShoppingActivity"></activity>
+        <activity android:name=".WebsiteActivity"></activity>
+        <activity
+            android:name=".Authentication.LoginActivity"
+            android:label="@string/login_activity"></activity>
+        <activity
+            android:name=".Authentication.RegisterActivity"
+            android:label="@string/register_activity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
